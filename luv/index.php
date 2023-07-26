@@ -17,23 +17,22 @@
 
   <main>
     <section>
-      <form action="">
+      <form action="verificandoUsuario.php" method="POST">
         <fieldset>
 
           <div class="title-box">
             <legend>Login</legend>
             <p class="desc">entre com suas informações de cadastro</p>
           </div>
-
           <div class="mailbox">
             <label for="email" id="email-label">E-mail/Telefone</label>
-            <input required id="email" class="textinput" type="email" name="" id="" placeholder="Digite seu e-mail">
+            <input required id="email" class="textinput" type="email" name="email" id="" placeholder="Digite seu e-mail">
             <div class="icon-box"></div>
           </div>
 
           <div class="passwordbox">
             <label for="pass">Senha</label>
-            <input required id="pass" class="textinput" type="password" name="" id="" placeholder="Digite sua senha">
+            <input required id="pass" class="textinput" type="password" name="senha" id="" placeholder="Digite sua senha">
             <div class="icon-box" id="password-icon-box"></div>
           </div>
 
@@ -48,7 +47,7 @@
 
           <div class="footer-wrapp">
             <button type="submit">entrar</button>
-            <p class="contrdesc">Não tem uma conta? <a href="/src/pages/cadastro.html">registre-se</a></p>
+            <p class="contrdesc">Não tem uma conta? <a href="src/pages/cadastro.php">registre-se</a></p>
           </div>
         </fieldset>
       </form>

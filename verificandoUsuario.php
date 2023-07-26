@@ -2,8 +2,7 @@
     include_once "conexao.php";
     $email = $_POST['email'];
     $senha = $_POST['senha'];
-    $selecionando = mysqli_query($conexao,"SELECT * FROM user WHERE email = '$email' and senha = '$senha'");
-
+    $selecionando = mysqli_query($conexao,"SELECT * FROM user WHERE 'email' = $email and 'senha' = $senha");
     $num = mysqli_num_rows($selecionando);
     if($num == 1){
         while($row = mysqli_fetch_array($selecionando)){
@@ -15,7 +14,6 @@
             $orientacao = $row['orientacao'];
 
             session_start();
-            $_SESSION['id'] = $id;
             $_SESSION['nome'] = $nome;
             $_SESSION['email'] = $email;
             $_SESSION['sexo'] = $sexo;
@@ -26,7 +24,6 @@
         }   
     }
     else{
-        
         header("Location: index.php");
     }
 ?>
