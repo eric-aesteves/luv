@@ -1,3 +1,6 @@
+<?php 
+  include_once "../../funcoes.php"
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +20,7 @@
   <main>
     <section>
       <section>
-        <form action="../../cadastrandoUsuario.php" method="POST">
+        <form action="#" method="POST">
           <fieldset>
   
             <div class="title-box">
@@ -74,7 +77,7 @@
             </div>
 
             <div class="footer-wrapp">
-              <button type="submit">INSCREVER-SE</button>
+              <button type="submit" onclick="<?php cadastrandoUsuario($conexao) ?>">INSCREVER-SE</button>
               <p class="contrdesc">Já tem uma conta? <a href="/index.html">Log-in</a></p>
             </div>
           </fieldset>

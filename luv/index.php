@@ -1,6 +1,10 @@
+<?php 
+    include_once "funcoes.php"
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/css/styles.css">
@@ -17,7 +21,7 @@
 
   <main>
     <section>
-      <form action="verificandoUsuario.php" method="POST">
+      <form action="#" method="POST">
         <fieldset>
 
           <div class="title-box">
@@ -46,7 +50,7 @@
           </div>
 
           <div class="footer-wrapp">
-            <button type="submit">entrar</button>
+            <button type="submit" onclick="<?php verificandoUser($conexao)?>">entrar</button>
             <p class="contrdesc">Não tem uma conta? <a href="src/pages/cadastro.php">registre-se</a></p>
           </div>
         </fieldset>
